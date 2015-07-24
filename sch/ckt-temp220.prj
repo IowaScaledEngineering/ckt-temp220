@@ -1,0 +1,4 @@
+schematics ckt-temp220.sch
+output-name ../pcb/ckt-temp220
+skip-m4
+elements-dir ../../ise-footprints

@@ -1,0 +1,105 @@
+v 20130925 2
+T 50000 40900 9 10 1 0 0 0 1
+LT3495 Regulator
+T 49800 40600 9 10 1 0 0 0 1
+ckt-temp220.sch
+T 50000 40300 9 10 1 0 0 0 1
+1
+T 51500 40300 9 10 1 0 0 0 1
+1
+T 53800 40300 9 10 1 0 0 0 1
+Michael Petersen
+C 40000 40000 0 0 0 title-bordered-B.sym
+T 44000 43500 9 10 1 0 0 2 4
+Notes:
+1) All capacitors are ceramic (X7R/X5R) unless otherwise noted.
+2) All capacitors and resistors are 0805 unless otherwise noted.
+
+C 45400 48500 1 270 0 capacitor-1.sym
+{
+T 46100 48300 5 10 0 1 270 0 1
+device=CAPACITOR
+T 45700 48200 5 10 1 1 0 0 1
+refdes=C1
+T 46300 48300 5 10 0 0 270 0 1
+symversion=0.1
+T 44900 47900 5 10 1 1 0 0 1
+value=0.1uF
+T 45700 47300 5 10 0 1 0 0 1
+footprint=0805
+T 45000 47700 5 10 1 1 0 0 1
+comment=16V
+}
+C 43000 47500 1 0 1 header4-1.sym
+{
+T 42000 48150 5 10 0 0 0 6 1
+device=HEADER4
+T 42600 49200 5 10 1 1 0 6 1
+refdes=J1
+T 43000 47500 5 10 0 0 0 0 1
+footprint=SMSIP4
+}
+N 46500 48500 43000 48500 4
+{
+T 43100 48600 5 10 1 1 0 0 1
+netname=GND
+}
+C 46500 47000 1 0 0 pct2075gvj-1.sym
+{
+T 47800 47750 5 10 1 1 0 6 1
+refdes=U1
+T 46800 49050 5 10 1 1 0 0 1
+device=PCT2075GVJ
+T 46700 47700 5 10 1 1 0 0 1
+footprint=TSOP6
+}
+N 44700 47600 46500 47600 4
+N 46500 47600 46500 48200 4
+N 43000 48900 43700 48900 4
+{
+T 43100 49000 5 10 1 1 0 0 1
+netname=SDA
+}
+N 48100 48800 48600 48800 4
+{
+T 48200 48900 5 10 1 1 0 0 1
+netname=SDA
+}
+N 48600 48200 48100 48200 4
+{
+T 48200 48300 5 10 1 1 0 0 1
+netname=SCL
+}
+C 45100 48700 1 0 0 SolderJumperOpen-3.sym
+{
+T 45450 48950 5 10 1 1 0 3 1
+refdes=JP2
+T 45100 50300 5 10 0 0 0 0 1
+footprint=SolderJumperSmall
+T 45100 50500 5 10 0 0 0 0 1
+device=SolderJumper
+}
+C 45100 49200 1 0 0 SolderJumperOpen-3.sym
+{
+T 45450 49450 5 10 1 1 0 3 1
+refdes=JP1
+T 45100 50800 5 10 0 0 0 0 1
+footprint=SolderJumperSmall
+T 45100 51000 5 10 0 0 0 0 1
+device=SolderJumper
+}
+N 45800 48800 45800 49300 4
+N 45800 48800 46500 48800 4
+N 45100 48800 45100 48500 4
+N 45100 49300 44700 49300 4
+N 44700 49300 44700 47600 4
+N 43700 47700 43000 47700 4
+{
+T 43100 47800 5 10 1 1 0 0 1
+netname=SCL
+}
+N 43000 48100 44700 48100 4
+{
+T 43100 48200 5 10 1 1 0 0 1
+netname=VCC
+}
