@@ -6,11 +6,11 @@ FileVersion[20070407]
 PCB["" 40000 67500]
 
 Grid[500.0 0 0 1]
-Cursor[0 8500 0.000000]
+Cursor[0 5500 0.000000]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[800 800 800 800 2000 800]
-Flags("showdrc,nameonpcb,uniquename,clearnew")
+Flags("showdrc,nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,16000,12500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -803,8 +803,10 @@ Via[30500 22000 3600 2000 0 2000 "" "thermal(0S,1S)"]
 Via[35500 22000 3600 2000 0 2000 "" "thermal(0S,1S)"]
 Via[35500 27000 3600 2000 0 2000 "" "thermal(0S,1S)"]
 Via[30500 27000 3600 2000 0 2000 "" "thermal(0S,1S)"]
+Via[16000 23000 3600 2000 0 2000 "" "thermal(0S,1S)"]
+Via[23500 23000 3600 2000 0 2000 "" "thermal(0S,1S)"]
 
-Element["" "SolderJumperSmall" "JP1" "unknown" 31500 44000 2000 -6100 1 85 ""]
+Element["" "SolderJumperSmall" "JP1" "unknown" 31500 44000 2000 -5600 1 85 ""]
 (
 	Attribute("description" "Soldering Jumper, 60mil, open")
 	Attribute("author" "Stefan Salewski")
@@ -832,7 +834,7 @@ Element["" "SolderJumperSmall" "JP2" "unknown" 8500 44000 -7500 -5600 1 80 ""]
 
 	)
 
-Element["hidename" "TSOP6" "U1" "unknown" 20000 31000 5882 -2744 1 100 ""]
+Element["hidename" "TSOP6" "U1" "unknown" 20000 33500 5882 -2744 1 100 ""]
 (
 	Attribute("description" "TSOP6")
 	Attribute("author" "Stefan Salewski")
@@ -863,7 +865,7 @@ Element["hidename" "SMSIP4" "J1" "unknown" 20000 40000 -10000 8500 1 100 ""]
 
 	)
 
-Element["hidename" "0805" "C1" "0.1uF" 20000 46500 -1950 3550 0 90 ""]
+Element["hidename" "0805" "C1" "0.1uF" 20000 47000 -1950 3550 0 90 ""]
 (
 	Pad[-3543 -393 -3543 393 5118 2000 5718 "1" "1" "square"]
 	Pad[3543 -393 3543 393 5118 2000 5718 "2" "2" "square"]
@@ -881,36 +883,36 @@ Layer(1 "top")
 	Line[25000 47957 23543 46500 2500 2000 "clearline"]
 	Line[31500 47900 24943 47900 2500 2000 "clearline"]
 	Line[24943 47900 23543 46500 2500 2000 "clearline"]
-	Line[23740 35724 23740 46697 2500 2000 "clearline"]
 	Line[23740 46697 23772 46728 2500 2000 "clearline"]
-	Line[20000 35724 20000 38500 2500 2000 "clearline"]
-	Line[20000 38500 16500 42000 2500 2000 "clearline"]
-	Line[16500 42000 16500 46457 2500 2000 "clearline"]
-	Line[16260 37240 12000 41500 1000 2000 "clearline"]
-	Line[12000 41500 8900 41500 1000 2000 "clearline"]
-	Line[8900 41500 8500 41100 1000 2000 "clearline"]
-	Line[16260 37240 16260 33240 1000 2000 "clearline"]
-	Line[16260 33240 17250 32250 1000 2000 "clearline"]
-	Line[17250 32250 25750 32250 1000 2000 "clearline"]
-	Line[25750 32250 27000 33500 1000 2000 "clearline"]
-	Line[27000 33500 27000 36600 1000 2000 "clearline"]
-	Line[27000 36600 31500 41100 1000 2000 "clearline"]
 	Line[35000 62500 35000 52500 1000 2000 "clearline"]
 	Line[35000 52500 36500 51000 1000 2000 "clearline"]
 	Line[36500 51000 36500 38500 1000 2000 "clearline"]
 	Line[36500 38500 34000 36000 1000 2000 "clearline"]
 	Line[34000 36000 30500 36000 1000 2000 "clearline"]
 	Line[30500 36000 29000 34500 1000 2000 "clearline"]
-	Line[29000 34500 29000 31536 1000 2000 "clearline"]
-	Line[29000 31536 23740 26276 1000 2000 "clearline"]
 	Line[5000 62500 5000 52500 1000 2000 "clearline"]
 	Line[5000 52500 3500 51000 1000 2000 "clearline"]
 	Line[3500 51000 3500 38000 1000 2000 "clearline"]
 	Line[3500 38000 5500 36000 1000 2000 "clearline"]
 	Line[5500 36000 10500 36000 1000 2000 "clearline"]
-	Line[10500 36000 16000 30500 1000 2000 "clearline"]
-	Line[16000 30500 16000 26536 1000 2000 "clearline"]
-	Line[16000 26536 16260 26276 1000 2000 "clearline"]
+	Line[16500 28500 16500 31500 1000 2000 "clearline"]
+	Line[16500 31500 12000 36000 1000 2000 "clearline"]
+	Line[12000 36000 9500 36000 1000 2000 "clearline"]
+	Line[16260 38224 10876 38224 1000 2000 "clearline"]
+	Line[10876 38224 8500 40600 1000 2000 "clearline"]
+	Line[20000 38224 20000 42957 1000 2000 "clearline"]
+	Line[20000 42957 16228 46728 1000 2000 "clearline"]
+	Line[23740 38224 23740 46697 1000 2000 "clearline"]
+	Line[16260 38224 16260 36240 1000 2000 "clearline"]
+	Line[16260 36240 17750 34750 1000 2000 "clearline"]
+	Line[17750 34750 25750 34750 1000 2000 "clearline"]
+	Line[25750 34750 26500 35500 1000 2000 "clearline"]
+	Line[26500 35500 26500 40000 1000 2000 "clearline"]
+	Line[26500 40000 27500 41000 1000 2000 "clearline"]
+	Line[27500 41000 31100 41000 1000 2000 "clearline"]
+	Line[31100 41000 31500 40600 1000 2000 "clearline"]
+	Line[23740 28776 23740 29240 1000 2000 "clearline"]
+	Line[23740 29240 30000 35500 1000 2000 "clearline"]
 	Polygon("clearpoly")
 	(
 		[2000 59000] [38000 59000] [38000 2000] [2000 2000] 
@@ -942,7 +944,7 @@ Layer(4 "silk")
 	Text[2500 56000 1 90 "SDA" "clearline,onsolder"]
 	Text[32000 56000 1 100 "SCL" "clearline,onsolder"]
 	Text[12000 55000 1 100 "GND" "clearline,onsolder"]
-	Text[21500 56500 1 100 "VCC" "clearline,selected,onsolder"]
+	Text[21500 56500 1 100 "VCC" "clearline,onsolder"]
 )
 Layer(5 "silk")
 (
